@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Office Design Inspiration</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Gallery Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            aspect-ratio: 4/3;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.05);
+        }
+        
+        .img-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .gallery-item:hover .img-overlay {
+            opacity: 1;
+        }
+        
+        .img-title {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .img-desc {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Home Office Inspiration</h1>
+            <p class="subtitle">Beautiful and functional home office designs</p>
+        </div>
+    </header>
+    
+    <!-- Main Gallery Content -->
+    <main class="container">
+        <div class="gallery">
+            <!-- Office 1 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/800x600/?modern-home-office" alt="Modern home office" class="gallery-img">
+                <div class="img-overlay">
+                    <h3 class="img-title">Contemporary Workspace</h3>
+                    <p class="img-desc">Clean lines with ergonomic furniture</p>
+                </div>
+            </div>
+            
+            <!-- Office 2 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/800x600/?home-office-desk" alt="Home office desk" class="gallery-img">
+                <div class="img-overlay">
+                    <h3 class="img-title">Executive Setup</h3>
+                    <p class="img-desc">Spacious desk with dual monitors</p>
+                </div>
+            </div>
+            
+            <!-- Office 3 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/800x600/?home-office-window" alt="Window home office" class="gallery-img">
+                <div class="img-overlay">
+                    <h3 class="img-title">Natural Light Office</h3>
+                    <p class="img-desc">Workspace by large windows</p>
+                </div>
+            </div>
+            
+            <!-- Office 4 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/800x600/?minimalist-office" alt="Minimalist office" class="gallery-img">
+                <div class="img-overlay">
+                    <h3 class="img-title">Simple Workspace</h3>
+                    <p class="img-desc">Only the essentials for focus</p>
+                </div>
+            </div>
+            
+            <!-- Office 5 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/800x600/?white-home-office" alt="White home office" class="gallery-img">
+                <div class="img-overlay">
+                    <h3 class="img-title">White Space</h3>
+                    <p class="img-desc">Clean white palette for clarity</p>
+                </div>
+            </div>
+            
+            <!-- Office 6 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/800x600/?wooden-office" alt="Wooden office" class="gallery-img">
+                <div class="img-overlay">
+                    <h3 class="img-title">Classic Study</h3>
+                    <p class="img-desc">Rich wood and leather accents</p>
+                </div>
+            </div>
+            
+            <!-- Office 7 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/800x600/?library-office" alt="Library office" class="gallery-img">
+                <div class="img-overlay">
+                    <h3 class="img-title">Home Library Office</h3>
+                    <p class="img-desc">Bookshelves with workspace</p>
+                </div>
+            </div>
+            
+            <!-- Office 8 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/800x600/?industrial-office" alt="Industrial office" class="gallery-img">
+                <div class="img-overlay">
+                    <h3 class="img-title">Loft Workspace</h3>
+                    <p class="img-desc">Exposed brick and metal accents</p>
+                </div>
+            </div>
+            <!-- Office 9 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/800x600/?small-office" alt="Small office" class="gallery-img">
+                <div class="img-overlay">
+                    <h3 class="img-title">Corner Workspace</h3>
+                    <p class="img-desc">Compact desk in bedroom corner</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Home Office Design Inspiration</p>
+        </div>
+    </footer>
+</body>
+</html>

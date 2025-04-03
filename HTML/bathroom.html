@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bathroom Design Inspiration Gallery</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 60px 0 40px;
+            background-color: #fff;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            color: #2a2a2a;
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        /* back button */
+        .back-btn {
+            display: inline-block;
+            margin: 20px;
+            padding: 8px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        
+        .back-btn:hover {
+            background: #2980b9;
+        }
+        
+        /* Gallery Styles */
+        .gallery-section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            color: #2a2a2a;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 300;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 25px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+           aspect-ratio: 4/3;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+           
+        }
+        
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.05);
+        }
+        
+        .design-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .gallery-item:hover .design-overlay {
+            opacity: 1;
+        }
+        
+        .design-style {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        
+        .design-features {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2a2a2a;
+            color: #ccc;
+            padding: 50px 0 30px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .footer-logo {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .copyright {
+            font-size: 0.9rem;
+            margin-top: 30px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Bathroom Design Gallery</h1>
+            <p class="subtitle">Explore stunning bathroom designs from modern minimalism to luxurious spa retreats</p>
+        </div>
+    </header>
+    <a href="gallery.html" class="back-btn">← Back to All Categories</a>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Modern Bathrooms Section -->
+        <section class="gallery-section">
+            <h2 class="section-title">Modern Bathrooms</h2>
+            <div class="gallery-grid">
+                <!-- Item 1 -->
+                <div class="gallery-item">
+                    <img src="IMAGE/traditionalkitchen1.jpeg" alt="Modern bathroom design" class="gallery-img">
+                    <div class="design-overlay">
+                        <div class="design-style">Contemporary Minimalist</div>
+                        <div class="design-features">Floating vanity, walk-in shower, neutral tones</div>
+                    </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="gallery-item">
+                    <img src="IMAGE/countrydesignkitchen1.avif" alt="Luxury bathroom" class="gallery-img">
+                    <div class="design-overlay">
+                        <div class="design-style">Urban Luxury</div>
+                        <div class="design-features">Marble finishes, freestanding tub, smart features</div>
+                    </div>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/random/600x450/?small-bathroom" alt="Small modern bathroom" class="gallery-img">
+                    <div class="design-overlay">
+                        <div class="design-style">Compact Design</div>
+                        <div class="design-features">Space-saving solutions, clever storage, large mirror</div>
+                    </div>
+                </div>
+                
+                <!-- Item 4 -->
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/random/600x450/?black-bathroom" alt="Black modern bathroom" class="gallery-img">
+                    <div class="design-overlay">
+                        <div class="design-style">Dark Elegance</div>
+                        <div class="design-features">Matte black fixtures, concrete walls, moody lighting</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Traditional Bathrooms Section -->
+        <section class="gallery-section">
+            <h2 class="section-title">Traditional Bathrooms</h2>
+            <div class="gallery-grid">
+                <!-- Item 1 -->
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/random/600x450/?classic-bathroom" alt="Classic bathroom" class="gallery-img">
+                    <div class="design-overlay">
+                        <div class="design-style">Classic Elegance</div>
+                        <div class="design-features">Clawfoot tub, wainscoting, vintage fixtures</div>
+                    </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/random/600x450/?traditional-bathroom" alt="Traditional bathroom" class="gallery-img">
+                    <div class="design-overlay">
+                        <div class="design-style">Country Charm</div>
+                        <div class="design-features">Wood accents, porcelain tiles, soft colors</div>
+                    </div>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/random/600x450/?vintage-bathroom" alt="Vintage bathroom" class="gallery-img">
+                    <div class="design-overlay">
+                        <div class="design-style">Vintage Revival</div>
+                        <div class="design-features">Hexagonal tiles, pedestal sink, brass fixtures</div>
+                    </div>
+                </div>
+                
+                <!-- Item 4 -->
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/random/600x450/?colonial-bathroom" alt="Colonial bathroom" class="gallery-img">
+                    <div class="design-overlay">
+                        <div class="design-style">Colonial Style</div>
+                        <div class="design-features">White paneling, chrome fixtures, symmetrical design</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Spa Bathrooms Section -->
+        <section class="gallery-section">
+            <h2 class="section-title">Spa Retreats</h2>
+            <div class="gallery-grid">
+                <!-- Item 1 -->
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/random/600x450/?spa-bathroom" alt="Spa bathroom" class="gallery-img">
+                    <div class="design-overlay">
+                        <div class="design-style">Luxury Spa</div>
+                        <div class="design-features">Steam shower, heated floors, natural stone</div>
+                    </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/random/600x450/?zen-bathroom" alt="Zen bathroom" class="gallery-img">
+                    <div class="design-overlay">
+                        <div class="design-style">Zen Retreat</div>
+                        <div class="design-features">Japanese soaking tub, pebble floor, bamboo accents</div>
+                    </div>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/random/600x450/?resort-bathroom" alt="Resort bathroom" class="gallery-img">
+                    <div class="design-overlay">
+                        <div class="design-style">Resort Style</div>
+                        <div class="design-features">Indoor-outdoor flow, rainfall shower, tropical plants</div>
+                    </div>
+                </div>
+                
+                <!-- Item 4 -->
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/random/600x450/?wellness-bathroom" alt="Wellness bathroom" class="gallery-img">
+                    <div class="design-overlay">
+                        <div class="design-style">Wellness Oasis</div>
+                        <div class="design-features">Chromatherapy lighting, aromatherapy, heated towel rack</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Small Bathrooms Section -->
+        <section class="gallery-section">
+            <h2 class="section-title">Small Space Solutions</h2>
+            <div class="gallery-grid">
+                <!-- Item 1 -->
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/random/600x450/?small-modern-bathroom" alt="Small modern bathroom" class="gallery-img">
+                    <div class="design-overlay">
+                        <div class="design-style">Efficient Design</div>
+                        <div class="design-features">Corner sink, sliding door, wall-mounted storage</div>
+                    </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/random/600x450/?powder-room" alt="Powder room" class="gallery-img">
+                    <div class="design-overlay">
+                        <div class="design-style">Chic Powder Room</div>
+                        <div class="design-features">Bold wallpaper, pedestal sink, statement mirror</div>
+                    </div>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/random/600x450/?apartment-bathroom" alt="Apartment bathroom" class="gallery-img">
+                    <div class="design-overlay">
+                        <div class="design-style">Apartment Bath</div>
+                        <div class="design-features">Shower-tub combo, floating shelves, light colors</div>
+                    </div>
+                </div>
+                
+                <!-- Item 4 -->
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/random/600x450/?compact-bathroom" alt="Compact bathroom" class="gallery-img">
+                    <div class="design-overlay">
+                        <div class="design-style">Space Maximized</div>
+                        <div class="design-features">Pocket door, recessed storage, glass shower</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Bathroom Design Gallery</div>
+            <p>Inspiring bathroom transformations since 2015</p>
+            <p class="copyright">© 2023 Bathroom Design Inspiration. All images for demonstration purposes.</p>
+        </div>
+    </footer>
+</body>
+</html>

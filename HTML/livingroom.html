@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Room Design Inspiration</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 60px 0 40px;
+            background-color: #fff;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            color: #222;
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        /* Filter Options */
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .filter-option {
+            padding: 8px 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-option:hover, .filter-option.active {
+            background: #222;
+            color: #fff;
+            border-color: #222;
+        }
+        
+        /* Gallery Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            aspect-ratio: 4/3;
+            background: #f0f0f0;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.08);
+        }
+        
+        .design-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 25px;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+        
+        .gallery-item:hover .design-info {
+            opacity: 1;
+        }
+        
+        .design-style {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        .design-details {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 60px 0;
+            background-color: #222;
+            color: #aaa;
+            margin-top: 80px;
+        }
+        
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .footer-logo {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-bottom: 20px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        
+        .copyright {
+            font-size: 0.9rem;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Living Room Inspirations</h1>
+            <p class="subtitle">Discover beautiful living room designs from top interior designers. Find the perfect style for your home.</p>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Living Room Gallery -->
+        <div class="gallery">
+            <!-- Living Room 1 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/800x600/?living-room,modern" alt="Modern living room" class="gallery-img">
+                <div class="design-info">
+                    <div class="design-style">Contemporary Modern</div>
+                    <div class="design-details">Clean lines, neutral palette with bold accent pieces</div>
+                </div>
+            </div>
+            
+            <!-- Living Room 2 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/800x600/?living-room,cozy" alt="Cozy living room" class="gallery-img">
+                <div class="design-info">
+                    <div class="design-style">Cozy Cottage</div>
+                    <div class="design-details">Warm textiles, soft lighting and natural wood elements</div>
+                </div>
+            </div>
+            
+            <!-- Living Room 3 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/800x600/?living-room,minimalist" alt="Minimalist living room" class="gallery-img">
+                <div class="design-info">
+                    <div class="design-style">Minimalist Design</div>
+                    <div class="design-details">Essential furniture only with monochromatic color scheme</div>
+                </div>
+            </div>
+            
+            <!-- Living Room 4 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/800x600/?living-room,scandinavian" alt="Scandinavian living room" class="gallery-img">
+                <div class="design-info">
+                    <div class="design-style">Scandinavian</div>
+                    <div class="design-details">Light woods, functional furniture and natural light</div>
+                </div>
+            </div>
+            
+            <!-- Living Room 5 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/800x600/?living-room,industrial" alt="Industrial living room" class="gallery-img">
+                <div class="design-info">
+                    <div class="design-style">Industrial Loft</div>
+                    <div class="design-details">Exposed brick, metal accents and open space</div>
+                </div>
+            </div>
+            
+            <!-- Living Room 6 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/800x600/?living-room,traditional" alt="Traditional living room" class="gallery-img">
+                <div class="design-info">
+                    <div class="design-style">Traditional Elegance</div>
+                    <div class="design-details">Classic furniture, rich fabrics and symmetrical layout</div>
+                </div>
+            </div>
+            
+            <!-- Living Room 7 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/800x600/?living-room,bohemian" alt="Bohemian living room" class="gallery-img">
+                <div class="design-info">
+                    <div class="design-style">Bohemian Chic</div>
+                    <div class="design-details">Eclectic mix of patterns, textures and global influences</div>
+                </div>
+            </div>
+            
+            <!-- Living Room 8 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/800x600/?living-room,mid-century" alt="Mid-century living room" class="gallery-img">
+                <div class="design-info">
+                    <div class="design-style">Mid-Century Modern</div>
+                    <div class="design-details">Organic curves, tapered legs and retro colors</div>
+                </div>
+            </div>
+            
+            <!-- Living Room 9 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/800x600/?living-room,luxury" alt="Luxury living room" class="gallery-img">
+                <div class="design-info">
+                    <div class="design-style">Luxury Design</div>
+                    <div class="design-details">High-end materials, statement lighting and custom pieces</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Living Space Designs</div>
+            <p>Bringing beautiful living room ideas to life since 2025</p>
+            <p class="copyright">© 2025 Living Room Inspiration Gallery. All images for demonstration purposes.</p>
+        </div>
+    </footer>
+</body>
+</html>

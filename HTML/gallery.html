@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    .container{
+      background-color: rgb(255, 255, 255);
+      margin-left:120px;
+      margin-right: 120px;
+    }
+    
+    .header{
+        
+        font-size:35px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        
+        
+    }
+    .tag-line{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* flex-wrap: wrap; */
+    }
+    .tab-btn-container{
+      margin-bottom: 40px;
+    }
+    .tab-btn {
+        margin-top :15px;
+        border:none;
+        display: inline-block;
+        padding: 8px 20px;
+        border-radius: 30px;
+        background-color: #ecf0f1;
+        text-decoration: none;
+        font-weight: 350;
+        font-size: 0.9rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:black;
+        margin-left: 10px;
+    }
+     .category-title{
+        font-size: 1.8rem;
+        /* margin-left: 20px; */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight:bold;
+       padding-bottom: 20px;
+       border-bottom: 2px solid #ddd;
+     }
+     .gallery-image{
+        display:grid;
+        grid-template-columns: auto auto auto; 
+     }
+     .category-image{
+       
+        margin-bottom: 15px;
+        gap: 20px;
+       }
+       img{
+        height: 250px;
+       width: 370px;
+       border-radius:10px;
+       }
+       .category-image:hover{ 
+        transition-duration: 0.3s;
+        transform: translateY(-5px);
+       }
+    .tab-btn.active,.tab-btn-container :hover{
+        background: #3498db;
+        color:white;
+    }
+    .item-overlay{
+        position:absolute;
+        left:0px;
+        right:0px;
+        bottom:0px;
+        color:white;
+        padding: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+        opacity: 0;
+    }
+    .item-overlay:hover{
+        opacity: 1;
+    }
+    .item-info h3{
+        margin-bottom: 5px;
+        font-size:1.1rem;
+        
+    }
+    .item-info p{
+        font-size:0.9rem;
+        opacity: 0.9;
+    }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container" >
+        <div class="header">
+            House Design Gallery
+        </div>
+        <div class="tag-line">
+            Browse our collection of beautifully designed spaces
+        </div>
+        <div class="tab-btn-container">
+            <button class="tab-btn active" style="margin-left: 0px">All</button>
+             <a href="kitchen.html" class="tab-btn">Kitchen</a>
+            <a href="bedroom.html" class="tab-btn" >Bedroom</a>
+            <a href="livingroom.html" class="tab-btn">Living Room</a>
+            <a href="kitchen.html" class="tab-btn">Dining Room</a>
+            <a href="exterior.html" class="tab-btn" >Exterior</a>
+            <a href="bathroom.html" class="tab-btn">Bathroom</a>
+            <a href="kitchen.html" class="tab-btn">Home Office</a>
+        </div>
+      <h2 class="category-title" >Kitchen Designs</h2>
+      <div class="gallery-image">
+        <!-- kitchen 1  -->
+        <div class="category-image">
+           <img src="IMAGE/kitchen/kitchen1.1.jpeg" alt-="rustic kitchen">
+        <div class="item-overlay">
+           <h3 class="item-info">Contemporary Kitchen</h3>
+            <p class="item-info">White cabinetry with marble countertops</p>
+        </div>
+        </div>
+        <!-- kitchen 2 -->
+      <div class="category-image">
+        <img src="IMAGE/kitchen/kitchen1.avif" alt-="rustic kitchen">
+        <div class="item-overlay">
+            <h3 class="item-info">Contemporary Kitchen</h3>
+            <p class="item-info">White cabinetry with marble countertops</p>
+        </div>
+       </div>
+       <!-- kitchen 3 -->
+       <div class="category-image">
+        <img src="IMAGE/kitchen/kitchen3.jpg" alt-="rustic kitchen">
+        <div class="item-overlay">
+            <h3 class="item-info">Contemporary Kitchen</h3>
+            <p class="item-info">White cabinetry with marble countertops</p>
+        </div>
+       </div> 
+       <!-- kitchen 4 -->
+        <div class="category-image">
+            <img src="IMAGE/kitchen/kitchen4.jpg" alt-="rustic kitchen">
+            <div class="item-overlay">
+                <h3 class="item-info">Contemporary Kitchen</h3>
+                <p class="item-info">White cabinetry with marble countertops</p>
+            </div>
+           </div>
+           <!-- kitchen 5 -->
+           <div class="category-image">
+            <img src="IMAGE/traditionalkitchen1.jpeg" alt-="rustic kitchen">
+            <div class="item-overlay">
+                <h3 class="item-info">Contemporary Kitchen</h3>
+                <p class="item-info">White cabinetry with marble countertops</p>
+            </div>
+           </div>
+           </div>
+           <!-- Bedroom -->
+            <h2 class="category-title">Bedroom Designs</h2>
+            <div class="gallery-image">
+             <div class="category-image">
+             <img src="IMAGE/kitchen/kitchen3.jpg" alt-="rustic kitchen">
+            <div class="item-overlay">
+                <h3 class="item-info">Contemporary Kitchen</h3>
+                <p class="item-info">White cabinetry with marble countertops</p>
+            </div>
+           </div>
+           <div class="category-image">
+            <img src="IMAGE/kitchen/kitchen3.jpg" alt-="rustic kitchen">
+           <div class="item-overlay">
+               <h3 class="item-info">Contemporary Kitchen</h3>
+               <p class="item-info">White cabinetry with marble countertops</p>
+           </div>
+          </div>
+          <div class="category-image">
+            <img src="IMAGE/kitchen/kitchen3.jpg" alt-="rustic kitchen">
+           <div class="item-overlay">
+               <h3 class="item-info">Contemporary Kitchen</h3>
+               <p class="item-info">White cabinetry with marble countertops</p>
+           </div>
+          </div>
+          <div class="category-image">
+            <img src="IMAGE/kitchen/kitchen3.jpg" alt-="rustic kitchen">
+           <div class="item-overlay">
+               <h3 class="item-info">Contemporary Kitchen</h3>
+               <p class="item-info">White cabinetry with marble countertops</p>
+           </div>
+          </div>
+          <div class="category-image">
+            <img src="IMAGE/kitchen/kitchen3.jpg" alt-="rustic kitchen">
+           <div class="item-overlay">
+               <h3 class="item-info">Contemporary Kitchen</h3>
+               <p class="item-info">White cabinetry with marble countertops</p>
+           </div>
+          </div>
+          <div class="category-image">
+            <img src="IMAGE/kitchen/kitchen3.jpg" alt-="rustic kitchen">
+           <div class="item-overlay">
+               <h3 class="item-info">Contemporary Kitchen</h3>
+               <p class="item-info">White cabinetry with marble countertops</p>
+           </div>
+          </div>
+    </div>
+    </div>
+</body>
+</html>
