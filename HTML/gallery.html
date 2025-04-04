@@ -41,6 +41,21 @@
         color:black;
         margin-left: 10px;
     }
+     /* Back Button */
+     .back-btn {
+            display: inline-block;
+            padding: 8px 15px 10px 15px;
+            background: #3498db;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+            border-radius: 4px;
+            transition:  0.3s;
+        }
+        
+        .back-btn:hover {
+            background: #2980b9;
+        }
      .category-title{
         font-size: 1.8rem;
         /* margin-left: 20px; */
@@ -54,7 +69,6 @@
         grid-template-columns: auto auto auto; 
      }
      .category-image{
-       
         margin-bottom: 15px;
         gap: 20px;
        }
@@ -79,7 +93,6 @@
         color:white;
         padding: 20px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      
         opacity: 0;
     }
     .item-overlay:hover{
@@ -87,17 +100,14 @@
     }
     .item-info h3{
         margin-bottom: 5px;
-        font-size:1.1rem;
-        
+        font-size:1rem;   
     }
     .item-info p{
         font-size:0.9rem;
         opacity: 0.9;
     }
-    
     </style>
 </head>
-
 <body>
     <div class="container" >
         <div class="header">
@@ -114,8 +124,9 @@
             <a href="kitchen.html" class="tab-btn">Dining Room</a>
             <a href="exterior.html" class="tab-btn" >Exterior</a>
             <a href="bathroom.html" class="tab-btn">Bathroom</a>
-            <a href="kitchen.html" class="tab-btn">Home Office</a>
+            <a href="homeoffice.html" class="tab-btn">Home Office</a>
         </div>
+        <!-- <a href="index.html" class="back-btn">Back </a> -->
       <h2 class="category-title" >Kitchen Designs</h2>
       <div class="gallery-image">
         <!-- kitchen 1  -->
@@ -170,49 +181,143 @@
            <!-- Bedroom -->
             <h2 class="category-title">Bedroom Designs</h2>
             <div class="gallery-image">
+                <!--bedroom 1-->
              <div class="category-image">
-             <img src="IMAGE/kitchen/kitchen3.jpg" alt-="Modern bedroom">
+             <img src="IMAGE/bedroom/bedroom3.jpeg" alt-="Luxury bedroom">
             <div class="item-overlay">
-                <h3 class="item-info">Contemporary Kitchen</h3>
-                <p class="item-info">White cabinetry with marble countertops</p>
+                <h3>Luxury Master Suite</h3>
+                 <p>Plush textures with calming colors</p>
             </div>
            </div>
+            <!--bedroom 2-->
            <div class="category-image">
-            <img src="IMAGE/kitchen/kitchen3.jpg" alt-="rustic kitchen">
+            <img src="IMAGE/bedroom/guestbedroom1.jpg" alt-="Guestroom">
            <div class="item-overlay">
-               <h3 class="item-info">Contemporary Kitchen</h3>
-               <p class="item-info">White cabinetry with marble countertops</p>
+            <h3>Cozy Guest Room</h3>
+            <p>Neutral tones with warm lighting</p>
            </div>
           </div>
+           <!--bedroom 3-->
           <div class="category-image">
-            <img src="IMAGE/kitchen/kitchen3.jpg" alt-="rustic kitchen">
+            <img src="IMAGE/bedroom/bedroom10.avif" alt-="Minimalist bedroom">
            <div class="item-overlay">
-               <h3 class="item-info">Contemporary Kitchen</h3>
-               <p class="item-info">White cabinetry with marble countertops</p>
+            <h3>Minimalist Retreat</h3>
+            <p>Neutral palette with clean lines</p>
            </div>
           </div>
+           <!--bedroom 4-->
           <div class="category-image">
-            <img src="IMAGE/kitchen/kitchen3.jpg" alt-="rustic kitchen">
+            <img src="IMAGE/bedroom/bedroom4.jpeg" alt-="Modern kitchen">
            <div class="item-overlay">
-               <h3 class="item-info">Contemporary Kitchen</h3>
-               <p class="item-info">White cabinetry with marble countertops</p>
+            <h3>Modern Bedroom</h3>
+            <p>Clean lines with warm wood accents</p>
            </div>
           </div>
+           <!--bedroom 5-->
           <div class="category-image">
-            <img src="IMAGE/kitchen/kitchen3.jpg" alt-="rustic kitchen">
+            <img src="IMAGE/bedroom/bedroom6.jpeg" alt-="Traditional bedroom">
            <div class="item-overlay">
-               <h3 class="item-info">Contemporary Kitchen</h3>
-               <p class="item-info">White cabinetry with marble countertops</p>
+            <h3>Traditional Bedroom</h3>
+            <p>Classic furniture with rich textures</p>
            </div>
           </div>
+           <!--bedroom 6-->
           <div class="category-image">
-            <img src="IMAGE/kitchen/kitchen3.jpg" alt-="rustic kitchen">
+            <img src="IMAGE/bedroom/bedroom7.jpeg" alt-="Bohemian Bedroom">
            <div class="item-overlay">
-               <h3 class="item-info">Contemporary Kitchen</h3>
-               <p class="item-info">White cabinetry with marble countertops</p>
+            <h3>Bohemian Bedroom</h3>
+            <p>Eclectic mix of patterns and textures</p>
            </div>
           </div>
     </div>
+    <!--Living Room -->
+    <h2 class="category-title">Living Room Designs</h2>
+    <div class="gallery-image">
+        <!--Living room 1-->
+    <div class="category-image">
+        <img src="IMAGE/LivingRoom/livingroom3.jpeg" alt-="Modern living room">
+       <div class="item-overlay">
+        <h3>Modern Room</h3>
+        <p>Neutral tones with warm lighting</p>
+       </div>
+      </div>
+      <!--Living room 2-->
+      <div class="category-image">
+        <img src="IMAGE/LivingRoom/livingroom4.jpeg" alt-="Minimalist bedroom">
+       <div class="item-overlay">
+        <h3>Minimalist Retreat</h3>
+        <p>Neutral palette with clean lines</p>
+       </div>
+      </div>
+      <!--Living room 3-->
+      <div class="category-image">
+        <img src="IMAGE/LivingRoom/livingroom1.jpeg" alt-="Modern kitchen">
+       <div class="item-overlay">
+        <h3>Modern Bedroom</h3>
+        <p>Clean lines with warm wood accents</p>
+       </div>
+      </div>
+       <!--Living room 4-->
+      <div class="category-image">
+        <img src="IMAGE/LivingRoom/livingroom2.jpeg" alt-="Traditional bedroom">
+       <div class="item-overlay">
+        <h3>Traditional Bedroom</h3>
+        <p>Classic furniture with rich textures</p>
+       </div>
+      </div>
+       <!--Living room 5-->
+      <div class="category-image">
+        <img src="IMAGE/LivingRoom/livingroom5.jpg" alt-="Bohemian Bedroom">
+       <div class="item-overlay">
+        <h3>Bohemian Bedroom</h3>
+        <p>Eclectic mix of patterns and textures</p>
+       </div>
+      </div>
+      </div>
+        <!--Dining Room-->
+    <h2 class="category-title">Dining Room Designs</h2>
+    <div class="gallery-image">
+        <!--Dining room 1-->
+    <div class="category-image">
+        <img src="IMAGE/LivingRoom/livingroom3.jpeg" alt-="Modern living room">
+       <div class="item-overlay">
+        <h3>Modern Room</h3>
+        <p>Neutral tones with warm lighting</p>
+       </div>
+      </div>
+      <!--Dining room 2-->
+      <div class="category-image">
+        <img src="IMAGE/LivingRoom/livingroom4.jpeg" alt-="Minimalist bedroom">
+       <div class="item-overlay">
+        <h3>Minimalist Retreat</h3>
+        <p>Neutral palette with clean lines</p>
+       </div>
+      </div>
+      <!--Dining room 3-->
+      <div class="category-image">
+        <img src="IMAGE/LivingRoom/livingroom1.jpeg" alt-="Modern kitchen">
+       <div class="item-overlay">
+        <h3>Modern Bedroom</h3>
+        <p>Clean lines with warm wood accents</p>
+       </div>
+      </div>
+       <!--Dining room 4-->
+      <div class="category-image">
+        <img src="IMAGE/LivingRoom/livingroom2.jpeg" alt-="Traditional bedroom">
+       <div class="item-overlay">
+        <h3>Traditional Bedroom</h3>
+        <p>Classic furniture with rich textures</p>
+       </div>
+      </div>
+       <!--Dining room 5-->
+      <div class="category-image">
+        <img src="IMAGE/LivingRoom/livingroom5.jpg" alt-="Bohemian Bedroom">
+       <div class="item-overlay">
+        <h3>Bohemian Bedroom</h3>
+        <p>Eclectic mix of patterns and textures</p>
+       </div>
+      </div>
+      </div>
     </div>
 </body>
 </html>
