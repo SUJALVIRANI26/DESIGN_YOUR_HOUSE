@@ -42,6 +42,21 @@
             max-width: 700px;
             margin: 0 auto;
         }
+         /* Back Button */
+         .back-btn {
+            display: inline-block;
+            margin: 20px;
+            padding: 8px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition:  0.3s;
+        }
+        
+        .back-btn:hover {
+            background: #2980b9;
+        }
         
         /* Gallery Grid */
         .gallery {
@@ -82,10 +97,9 @@
             left: 0;
             right: 0;
             padding: 20px;
-            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
             color: white;
             opacity: 0;
-            transition: opacity 0.3s;
+            transition: 0.3s;
         }
         
         .gallery-item:hover .img-overlay {
@@ -118,7 +132,8 @@
             <p class="subtitle">Beautiful and functional home office designs</p>
         </div>
     </header>
-    
+      <!-- Back Button -->
+      <a href="gallery.html" class="back-btn">← Back to All Categories</a>
     <!-- Main Gallery Content -->
     <main class="container">
         <div class="gallery">
