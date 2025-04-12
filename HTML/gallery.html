@@ -17,8 +17,6 @@
         font-size:35px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 500;
-        
-        
     }
     .tag-line{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -44,7 +42,7 @@
      /* Back Button */
      .back-btn {
             display: inline-block;
-            padding: 8px 15px 10px 15px;
+            padding: 8px 26px 10px 12px;
             background: #3498db;
             color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -62,20 +60,29 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight:bold;
        padding-bottom: 20px;
-       border-bottom: 2px solid #ddd;
+       /* border-bottom: 2px solid #ddd; */
      }
      .gallery-image{
+        
         display:grid;
-        grid-template-columns: auto auto auto; 
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: auto auto;
+        gap : 20px;
      }
      .category-image{
-        margin-bottom: 15px;
-        gap: 20px;
-       }
-       img{
-        height: 250px;
-       width: 370px;
-       border-radius:10px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+        aspect-ratio: 4/3;
+      }
+       .category-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.3s ease;
        }
        .category-image:hover{ 
         transition-duration: 0.3s;
@@ -92,6 +99,8 @@
         bottom:0px;
         color:white;
         padding: 20px;
+        background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        display: inline-block;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         opacity: 0;
     }
@@ -106,6 +115,37 @@
         font-size:0.9rem;
         opacity: 0.9;
     }
+    @media only screen and (max-width: 768px) {
+        .container {
+            padding: 15px;
+            margin: 0;
+        }
+        
+        .gallery-image {
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .tab-btn {
+            padding: 6px 15px;
+            font-size: 0.8rem;
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        .container {
+            padding: 10px;
+        }
+        .gallery-image {
+            grid-template-columns: 1fr;
+        }
+        .tab-btn-container {
+            gap: 8px;
+        }
+        .back-btn {
+            padding: 6px 20px 8px 10px;
+        }
+    }
+    
     </style>
 </head>
 <body>
@@ -126,7 +166,7 @@
             <a href="bathroom.html" class="tab-btn">Bathroom</a>
             <a href="homeoffice.html" class="tab-btn">Home Office</a>
         </div>
-        <!-- <a href="index.html" class="back-btn">Back </a> -->
+        <a href="index.html" class="back-btn">&#8592; Back </a>
       <h2 class="category-title" >Kitchen Designs</h2>
       <div class="gallery-image">
         <!-- kitchen 1  -->
