@@ -22,12 +22,16 @@
             max-width: 1400px;
             margin: 0 auto;
             padding: 20px;
+            margin-left: 120px;
+            margin-right:120px;
         }
         
         /* Header Styles */
         header {
             text-align: center;
             padding: 40px 0;
+            background-image: url(IMAGE/homeoffice/homeoffice1.1.jpeg);
+         
         }
         
         h1 {
@@ -64,6 +68,7 @@
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 30px;
             margin: 50px 0;
+            
         }
         
         .gallery-item {
@@ -73,6 +78,8 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             transition: all 0.3s;
             aspect-ratio: 4/3;
+            max-height:260px;
+            width:100%;
         }
         
         .gallery-item:hover {
@@ -82,7 +89,7 @@
         
         .gallery-img {
             width: 100%;
-            height: 100%;
+            
             object-fit: cover;
             transition: transform 0.5s;
         }
@@ -96,6 +103,7 @@
             bottom: 0;
             left: 0;
             right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
             padding: 20px;
             color: white;
             opacity: 0;
@@ -120,7 +128,8 @@
         footer {
             text-align: center;
             padding: 40px 0;
-            color: #7f8c8d;
+            color: #523030;
+            background-color: #5e829b;
         }
     </style>
 </head>
@@ -139,7 +148,7 @@
         <div class="gallery">
             <!-- Office 1 -->
             <div class="gallery-item">
-                <img src="https://source.unsplash.com/random/800x600/?modern-home-office" alt="Modern home office" class="gallery-img">
+                <img src="IMAGE/homeoffice/homeoffice0.webp" alt="Modern home office" class="gallery-img">
                 <div class="img-overlay">
                     <h3 class="img-title">Contemporary Workspace</h3>
                     <p class="img-desc">Clean lines with ergonomic furniture</p>
@@ -148,7 +157,7 @@
             
             <!-- Office 2 -->
             <div class="gallery-item">
-                <img src="https://source.unsplash.com/random/800x600/?home-office-desk" alt="Home office desk" class="gallery-img">
+                <img src="IMAGE/homeoffice/homeoffice1.jpeg" alt="Home office desk" class="gallery-img">
                 <div class="img-overlay">
                     <h3 class="img-title">Executive Setup</h3>
                     <p class="img-desc">Spacious desk with dual monitors</p>
@@ -157,7 +166,7 @@
             
             <!-- Office 3 -->
             <div class="gallery-item">
-                <img src="https://source.unsplash.com/random/800x600/?home-office-window" alt="Window home office" class="gallery-img">
+                <img src="IMAGE/homeoffice/homeoffice14.jpeg" alt="Window home office" class="gallery-img">
                 <div class="img-overlay">
                     <h3 class="img-title">Natural Light Office</h3>
                     <p class="img-desc">Workspace by large windows</p>
@@ -166,7 +175,7 @@
             
             <!-- Office 4 -->
             <div class="gallery-item">
-                <img src="https://source.unsplash.com/random/800x600/?minimalist-office" alt="Minimalist office" class="gallery-img">
+                <img src="IMAGE/homeoffice/homeoffice3.jpg" alt="Minimalist office" class="gallery-img">
                 <div class="img-overlay">
                     <h3 class="img-title">Simple Workspace</h3>
                     <p class="img-desc">Only the essentials for focus</p>
@@ -175,7 +184,7 @@
             
             <!-- Office 5 -->
             <div class="gallery-item">
-                <img src="https://source.unsplash.com/random/800x600/?white-home-office" alt="White home office" class="gallery-img">
+                <img src="IMAGE/homeoffice/homeoffice4.jpeg" alt="White home office" class="gallery-img">
                 <div class="img-overlay">
                     <h3 class="img-title">White Space</h3>
                     <p class="img-desc">Clean white palette for clarity</p>
@@ -184,7 +193,7 @@
             
             <!-- Office 6 -->
             <div class="gallery-item">
-                <img src="https://source.unsplash.com/random/800x600/?wooden-office" alt="Wooden office" class="gallery-img">
+                <img src="IMAGE/homeoffice/homeoffice5.jpg" alt="Wooden office" class="gallery-img">
                 <div class="img-overlay">
                     <h3 class="img-title">Classic Study</h3>
                     <p class="img-desc">Rich wood and leather accents</p>
@@ -193,7 +202,7 @@
             
             <!-- Office 7 -->
             <div class="gallery-item">
-                <img src="https://source.unsplash.com/random/800x600/?library-office" alt="Library office" class="gallery-img">
+                <img src="IMAGE/homeoffice/homeoffice6.jpg" alt="Library office" class="gallery-img">
                 <div class="img-overlay">
                     <h3 class="img-title">Home Library Office</h3>
                     <p class="img-desc">Bookshelves with workspace</p>
@@ -202,7 +211,7 @@
             
             <!-- Office 8 -->
             <div class="gallery-item">
-                <img src="https://source.unsplash.com/random/800x600/?industrial-office" alt="Industrial office" class="gallery-img">
+                <img src="IMAGE/homeoffice/homeoffice15.webp" alt="Industrial office" class="gallery-img">
                 <div class="img-overlay">
                     <h3 class="img-title">Loft Workspace</h3>
                     <p class="img-desc">Exposed brick and metal accents</p>
@@ -210,7 +219,7 @@
             </div>
             <!-- Office 9 -->
             <div class="gallery-item">
-                <img src="https://source.unsplash.com/random/800x600/?small-office" alt="Small office" class="gallery-img">
+                <img src="IMAGE/homeoffice/homeoffice13.jpg" alt="Small office" class="gallery-img">
                 <div class="img-overlay">
                     <h3 class="img-title">Corner Workspace</h3>
                     <p class="img-desc">Compact desk in bedroom corner</p>

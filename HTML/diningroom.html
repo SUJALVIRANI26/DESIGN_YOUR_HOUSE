@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kitchen Design Gallery</title>
+    <title>Dining Room Design Gallery</title>
     <style>
         /* Base Styles */
         * {
@@ -16,16 +16,33 @@
             background-color: #f8f9fa;
             color: #333;
         }
+        
         /* Header */
         .header {
             text-align: center;
             padding: 40px 20px;
-             background-image:url('https://images.unsplash.com/photo-1556911220-bff31c812dba');
-             background-repeat: no-repeat; 
+            background-image: url('https://images.unsplash.com/photo-1600121848594-d8644e57abab');
+            background-repeat: no-repeat; 
             background-size: cover;
             background-position: center;
             color: white;
             margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 1;
         }
         
         .header h1 {
@@ -49,7 +66,7 @@
             color: white;
             text-decoration: none;
             border-radius: 4px;
-            transition:  0.3s;
+            transition: background 0.3s;
         }
         
         .back-btn:hover {
@@ -65,7 +82,7 @@
         
         .gallery-grid {
             display: grid;
-            grid-template-columns:auto auto auto ;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 25px;
             margin-bottom: 50px;
         }
@@ -76,10 +93,12 @@
             overflow: hidden;
             transition: transform 0.3s ease;
             height: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         
         .gallery-item:hover {
             transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
         }
         
         .gallery-item img {
@@ -94,8 +113,8 @@
             bottom: 0;
             left: 0;
             right: 0;
-            color: white;
             background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
             padding: 20px;
             opacity: 0;
             transition: opacity 0.3s ease;
@@ -115,17 +134,16 @@
             opacity: 0.9;
         }
         
-        .style-tag {
+        /* .style-tag {
             position: absolute;
             top: 15px;
             right: 15px;
-            background: rgba(52, 152, 219, 0.9);
+            background: rgba(139, 90, 43, 0.9);
             color: white;
             padding: 5px 12px;
             border-radius: 20px;
             font-size: 0.8rem;
-        }
-        
+        } */
         /* Responsive Adjustments */
         @media (max-width: 768px) {
             .header h1 {
@@ -136,14 +154,13 @@
                 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             }
         }
-        
         @media (max-width: 480px) {
             .header h1 {
                 font-size: 1.8rem;
             }
             
-            .gallery-grid {
-                grid-template-columns: 1fr;
+            .header p {
+                font-size: 1rem;
             }
         }
     </style>
@@ -151,121 +168,136 @@
 <body>
     <!-- Header -->
     <div class="header">
-        <h1>Kitchen Design Gallery</h1>
-        <p>Explore our collection of beautiful kitchen designs</p>
+        <div class="header-content">
+            <h1>Dining Room Design Gallery</h1>
+            <p>Discover inspiring dining room designs for every style</p>
+        </div>
     </div>
     
     <!-- Back Button -->
     <a href="gallery.html" class="back-btn">← Back to All Categories</a>
+    
     <div class="gallery-container">
-        <!-- Kitchen Gallery Grid -->
+        <!-- Dining Room Gallery Grid -->
         <div class="gallery-grid">
-            <!-- Kitchen 1 -->
+            <!-- Design 1 -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115" alt="Modern White Kitchen">
+                <img src="IMAGE/DiningRoom/diningRoom1.jpg" alt="Modern Dining Room">
                 <div class="item-info">
-                    <h3>Contemporary White Kitchen</h3>
-                    <p>White cabinetry with marble countertops</p>
+                    <h3>Modern Minimalist</h3>
+                    <p>Clean lines with neutral tones</p>
                 </div>
+                <span class="style-tag">Contemporary</span>
             </div>
             
-            <!-- Kitchen 2 -->
+            <!-- Design 2 -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1556909114-44e2d8e8ca0e" alt="Rustic Kitchen">
+                <img src="IMAGE/DiningRoom/diningroom12.avif" alt="Rustic Dining Room">
                 <div class="item-info">
-                    <h3>Farmhouse Kitchen</h3>
-                    <p>Reclaimed wood with apron sink</p>
+                    <h3>Rustic Farmhouse</h3>
+                    <p>Warm wood with vintage charm</p>
                 </div>
+                <span class="style-tag">Rustic</span>
             </div>
             
-            <!-- Kitchen 3 -->
+            <!-- Design 3 -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab" alt="Country Kitchen">
+                <img src="IMAGE/DiningRoom/diningroom4.jpg" alt="Formal Dining Room">
                 <div class="item-info">
-                    <h3>Country Kitchen</h3>
-                    <p>Open shelving with ceramic tile</p>
+                    <h3>Classic Formal</h3>
+                    <p>Elegant traditional design</p>
                 </div>
+                <span class="style-tag">Traditional</span>
             </div>
             
-            <!-- Kitchen 4 -->
+            <!-- Design 4 -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1600565274408-8a217a5bb94a" alt="Industrial Kitchen">
+                <img src="IMAGE/DiningRoom/dininigroom3.jpg" alt="Scandinavian Dining">
                 <div class="item-info">
-                    <h3>Industrial Kitchen</h3>
-                    <p>Concrete counters with metal accents</p>
+                    <h3>Scandinavian</h3>
+                    <p>Light wood with simple decor</p>
                 </div>
+                <span class="style-tag">Nordic</span>
             </div>
             
-            <!-- Kitchen 5 -->
+            <!-- Design 5 -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea" alt="Traditional Kitchen">
+                <img src="IMAGE/DiningRoom/diningeroom13.jpg" alt="Industrial Dining">
                 <div class="item-info">
-                    <h3>Traditional Kitchen</h3>
-                    <p>Raised panel cabinets with granite</p>
+                    <h3>Industrial Chic</h3>
+                    <p>Metal accents with exposed elements</p>
                 </div>
+                <span class="style-tag">Industrial</span>
             </div>
             
-            <!-- Kitchen 6 -->
+            <!-- Design 6 -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154" alt="Minimalist Kitchen">
+                <img src="IMAGE/DiningRoom/diningroom5.jpg" alt="Transitional Dining">
                 <div class="item-info">
-                    <h3>Minimalist Kitchen</h3>
-                    <p>Clean lines with hidden storage</p>
+                    <h3>Transitional Style</h3>
+                    <p>Blend of traditional and modern</p>
                 </div>
+                <span class="style-tag">Hybrid</span>
             </div>
             
-            <!-- Kitchen 7 -->
+            <!-- Design 7 -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1600566753135-51b0d5f947b9" alt="Modern Dark Kitchen">
+                <img src="IMAGE/DiningRoom/diningroom6.jpg" alt="Coastal Dining">
                 <div class="item-info">
-                    <h3>Dark Modern Kitchen</h3>
-                    <p>Matte black with gold accents</p>
+                    <h3>Coastal Breeze</h3>
+                    <p>Light colors with nautical touches</p>
                 </div>
+                <span class="style-tag">Coastal</span>
             </div>
             
-            <!-- Kitchen 8 -->
+            <!-- Design 8 -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115" alt="Transitional Kitchen">
+                <img src="IMAGE/DiningRoom/diningroom9.avif" alt="Mid-Century Dining">
                 <div class="item-info">
-                    <h3>Transitional Kitchen</h3>
-                    <p>Mix of traditional and modern elements</p>
+                    <h3>Mid-Century Modern</h3>
+                    <p>Retro-inspired with clean lines</p>
                 </div>
+                <span class="style-tag">Retro</span>
             </div>
             
-            <!-- Kitchen 9 -->
+            <!-- Design 9 -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1600607687939-e75505f9b748" alt="Scandinavian Kitchen">
+                <img src="IMAGE/DiningRoom/diningroom10.jpg" alt="Glam Dining">
                 <div class="item-info">
-                    <h3>Scandinavian Kitchen</h3>
-                    <p>Light wood with white surfaces</p>
+                    <h3>Glamorous</h3>
+                    <p>Luxurious materials with metallic accents</p>
                 </div>
+                <span class="style-tag">Luxury</span>
             </div>
             
-            <!-- Kitchen 10 -->
+            <!-- Design 10 -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1600607687939-e75505f9b748" alt="Urban Loft Kitchen">
+                <img src="IMAGE/DiningRoom/diningroom7.jpg" alt="Bohemian Dining">
                 <div class="item-info">
-                    <h3>Urban Loft Kitchen</h3>
-                    <p>Exposed brick with stainless steel</p>
+                    <h3>Bohemian</h3>
+                    <p>Eclectic mix with global influences</p>
                 </div>
+                <span class="style-tag">Boho</span>
             </div>
             
-            <!-- Kitchen 11 -->
+            <!-- Design 11 -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154" alt="Modern Farmhouse">6
+                <img src="IMAGE/DiningRoom/diningroom8.jpeg" alt="French Country Dining">
+                <div class="item-info">
+                    <h3>French Country</h3>
+                    <p>Distressed wood with elegant details</p>
+                </div>
+                <span class="style-tag">Provence</span>
+            </div>
+            
+            <!-- Design 12 -->
+            <div class="gallery-item">
+                <img src="IMAGE/DiningRoom/diningroom15.jpeg" alt="Modern Farmhouse Dining">
                 <div class="item-info">
                     <h3>Modern Farmhouse</h3>
-                    <p>Shaker cabinets with black fixtures</p>
+                    <p>Updated rustic with contemporary flair</p>
                 </div>
-            </div>
-            
-            <!-- Kitchen 12 -->
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1600607687939-e75505f9b748" alt="Classic Elegance">
-                <div class="item-info">
-                    <h3>Classic Elegance Kitchen</h3>
-                    <p>Timeless design with rich wood tones</p>
-                </div>
+                <span class="style-tag">Farmhouse</span>
             </div>
         </div>
     </div>
