@@ -108,23 +108,68 @@
       font-size:0.9rem;
       opacity: 0.9;
   }
-  /* #next{
-      margin-left: 90%;
-  } */
+  /* footer */
+/* Footer Styling */
+footer {
+    background-color: #c5e1ee;  /* Light gray background */
+    padding: 30px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #555;
+    /* line-height: 1.6; */
+}
+
+.footer-details p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 15px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #999;
+}
+
+/* Hover effect for the footer logo */
+.footer-logo:hover {
+    color: #007bff;
+    cursor: pointer;
+}
+
   @media only screen and (max-width: 768px) {
-      .container {
-          padding: 15px;
-          margin: 0;
+      .container 
+      {
+        padding: 15px;
+        margin: 0;
       }
       
-      .gallery-image {
-          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-          gap: 15px;
+      .gallery-image 
+      {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px;
       }
       
       .tab-btn {
-          padding: 6px 15px;
-          font-size: 0.8rem;
+        padding: 6px 15px;
+        font-size: 0.8rem;
       }
   }
   @media only screen and (max-width: 480px) {

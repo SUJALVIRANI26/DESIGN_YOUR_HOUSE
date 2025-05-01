@@ -50,20 +50,7 @@ h1 {
     flex-wrap: wrap;
 }
 
-/* .filter-option {
-    padding: 8px 20px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 30px;
-    transition: all 0.3s ease;
-}
 
-.filter-option:hover, .filter-option.active {
-    background: #222;
-    color: #fff;
-    border-color: #222;
-} */
-/* Back Button */
 .back-btn {
     display: inline-block;
     margin: 20px;
